@@ -1,0 +1,10 @@
+C:\Users\filip\source\repos\SimpelRegner\SimpelRegner\bin\Debug\SimpelRegner.exe.config
+C:\Users\filip\source\repos\SimpelRegner\SimpelRegner\bin\Debug\SimpelRegner.exe
+C:\Users\filip\source\repos\SimpelRegner\SimpelRegner\bin\Debug\SimpelRegner.pdb
+C:\Users\filip\source\repos\SimpelRegner\SimpelRegner\obj\Debug\SimpelRegner.csprojResolveAssemblyReference.cache
+C:\Users\filip\source\repos\SimpelRegner\SimpelRegner\obj\Debug\SimpelRegner.Form1.resources
+C:\Users\filip\source\repos\SimpelRegner\SimpelRegner\obj\Debug\SimpelRegner.Properties.Resources.resources
+C:\Users\filip\source\repos\SimpelRegner\SimpelRegner\obj\Debug\SimpelRegner.csproj.GenerateResource.Cache
+C:\Users\filip\source\repos\SimpelRegner\SimpelRegner\obj\Debug\SimpelRegner.csproj.CoreCompileInputs.cache
+C:\Users\filip\source\repos\SimpelRegner\SimpelRegner\obj\Debug\SimpelRegner.exe
+C:\Users\filip\source\repos\SimpelRegner\SimpelRegner\obj\Debug\SimpelRegner.pdb
