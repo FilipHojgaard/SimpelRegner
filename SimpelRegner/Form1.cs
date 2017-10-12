@@ -20,38 +20,6 @@ namespace SimpelRegner
             InitializeComponent();
         }
 
-        private void checkPlus_CheckedChanged(object sender, EventArgs e)
-        {
-            beregner.chooser = 1;
-            checkMinus.Checked = false;
-            checkGange.Checked = false;
-            checkDivision.Checked = false;
-        }
-
-        private void checkMinus_CheckedChanged(object sender, EventArgs e)
-        {
-            beregner.chooser = 2;
-            checkPlus.Checked = false;
-            checkGange.Checked = false;
-            checkDivision.Checked = false;
-        }
-
-        private void checkGange_CheckedChanged(object sender, EventArgs e)
-        {
-            beregner.chooser = 3;
-            checkMinus.Checked = false;
-            checkPlus.Checked = false;
-            checkDivision.Checked = false;
-        }
-
-        private void checkDivision_CheckedChanged(object sender, EventArgs e)
-        {
-            beregner.chooser = 4;
-            checkMinus.Checked = false;
-            checkGange.Checked = false;
-            checkPlus.Checked = false;
-        }
-
         private void udregnKnap_Click(object sender, EventArgs e)
         {
             System.Console.WriteLine(beregner.chooser);
@@ -72,6 +40,26 @@ namespace SimpelRegner
         private void button1_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Mega simpelt");
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox1.SelectedItem == "Plus")
+            {
+                beregner.chooser = 1;
+            }
+            if (comboBox1.SelectedItem == "Minus")
+            {
+                beregner.chooser = 2;
+            }
+            if (comboBox1.SelectedItem == "Gange")
+            {
+                beregner.chooser = 3;
+            }
+            if (comboBox1.SelectedItem == "Division")
+            {
+                beregner.chooser = 4;
+            }
         }
     }
 }

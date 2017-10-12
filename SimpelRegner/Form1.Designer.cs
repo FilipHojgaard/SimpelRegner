@@ -34,11 +34,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.udregnKnap = new System.Windows.Forms.Button();
-            this.checkPlus = new System.Windows.Forms.CheckBox();
-            this.checkMinus = new System.Windows.Forms.CheckBox();
-            this.checkGange = new System.Windows.Forms.CheckBox();
-            this.checkDivision = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.firstNumber)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.secondNumber)).BeginInit();
             this.SuspendLayout();
@@ -47,7 +44,7 @@
             // 
             this.ResultLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.ResultLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ResultLabel.Location = new System.Drawing.Point(96, 146);
+            this.ResultLabel.Location = new System.Drawing.Point(17, 100);
             this.ResultLabel.Name = "ResultLabel";
             this.ResultLabel.Size = new System.Drawing.Size(86, 20);
             this.ResultLabel.TabIndex = 0;
@@ -55,7 +52,7 @@
             // 
             // firstNumber
             // 
-            this.firstNumber.Location = new System.Drawing.Point(117, 42);
+            this.firstNumber.Location = new System.Drawing.Point(128, 39);
             this.firstNumber.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -73,7 +70,7 @@
             // 
             // secondNumber
             // 
-            this.secondNumber.Location = new System.Drawing.Point(117, 101);
+            this.secondNumber.Location = new System.Drawing.Point(128, 98);
             this.secondNumber.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -92,7 +89,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(113, 26);
+            this.label1.Location = new System.Drawing.Point(124, 23);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(50, 13);
             this.label1.TabIndex = 3;
@@ -101,7 +98,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(114, 85);
+            this.label2.Location = new System.Drawing.Point(125, 82);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(49, 13);
             this.label2.TabIndex = 4;
@@ -109,7 +106,7 @@
             // 
             // udregnKnap
             // 
-            this.udregnKnap.Location = new System.Drawing.Point(17, 143);
+            this.udregnKnap.Location = new System.Drawing.Point(17, 59);
             this.udregnKnap.Name = "udregnKnap";
             this.udregnKnap.Size = new System.Drawing.Size(67, 23);
             this.udregnKnap.TabIndex = 5;
@@ -117,53 +114,9 @@
             this.udregnKnap.UseVisualStyleBackColor = true;
             this.udregnKnap.Click += new System.EventHandler(this.udregnKnap_Click);
             // 
-            // checkPlus
-            // 
-            this.checkPlus.AutoSize = true;
-            this.checkPlus.Location = new System.Drawing.Point(17, 26);
-            this.checkPlus.Name = "checkPlus";
-            this.checkPlus.Size = new System.Drawing.Size(64, 17);
-            this.checkPlus.TabIndex = 6;
-            this.checkPlus.Text = "Addition";
-            this.checkPlus.UseVisualStyleBackColor = true;
-            this.checkPlus.CheckedChanged += new System.EventHandler(this.checkPlus_CheckedChanged);
-            // 
-            // checkMinus
-            // 
-            this.checkMinus.AutoSize = true;
-            this.checkMinus.Location = new System.Drawing.Point(17, 49);
-            this.checkMinus.Name = "checkMinus";
-            this.checkMinus.Size = new System.Drawing.Size(80, 17);
-            this.checkMinus.TabIndex = 7;
-            this.checkMinus.Text = "Subtraktion";
-            this.checkMinus.UseVisualStyleBackColor = true;
-            this.checkMinus.CheckedChanged += new System.EventHandler(this.checkMinus_CheckedChanged);
-            // 
-            // checkGange
-            // 
-            this.checkGange.AutoSize = true;
-            this.checkGange.Location = new System.Drawing.Point(17, 73);
-            this.checkGange.Name = "checkGange";
-            this.checkGange.Size = new System.Drawing.Size(87, 17);
-            this.checkGange.TabIndex = 8;
-            this.checkGange.Text = "Multiplikation";
-            this.checkGange.UseVisualStyleBackColor = true;
-            this.checkGange.CheckedChanged += new System.EventHandler(this.checkGange_CheckedChanged);
-            // 
-            // checkDivision
-            // 
-            this.checkDivision.AutoSize = true;
-            this.checkDivision.Location = new System.Drawing.Point(17, 97);
-            this.checkDivision.Name = "checkDivision";
-            this.checkDivision.Size = new System.Drawing.Size(63, 17);
-            this.checkDivision.TabIndex = 9;
-            this.checkDivision.Text = "Division";
-            this.checkDivision.UseVisualStyleBackColor = true;
-            this.checkDivision.CheckedChanged += new System.EventHandler(this.checkDivision_CheckedChanged);
-            // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(17, 195);
+            this.button1.Location = new System.Drawing.Point(118, 155);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 10;
@@ -171,17 +124,29 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Plus",
+            "Minus",
+            "Gange",
+            "Division"});
+            this.comboBox1.Location = new System.Drawing.Point(17, 22);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(67, 21);
+            this.comboBox1.TabIndex = 11;
+            this.comboBox1.Text = "Vælg:";
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(201, 230);
+            this.ClientSize = new System.Drawing.Size(244, 198);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.checkDivision);
-            this.Controls.Add(this.checkGange);
-            this.Controls.Add(this.checkMinus);
-            this.Controls.Add(this.checkPlus);
             this.Controls.Add(this.udregnKnap);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -208,11 +173,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button udregnKnap;
-        private System.Windows.Forms.CheckBox checkPlus;
-        private System.Windows.Forms.CheckBox checkMinus;
-        private System.Windows.Forms.CheckBox checkGange;
-        private System.Windows.Forms.CheckBox checkDivision;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
 
