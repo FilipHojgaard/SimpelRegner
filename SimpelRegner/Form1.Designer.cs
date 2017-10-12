@@ -38,6 +38,7 @@
             this.checkMinus = new System.Windows.Forms.CheckBox();
             this.checkGange = new System.Windows.Forms.CheckBox();
             this.checkDivision = new System.Windows.Forms.CheckBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.firstNumber)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.secondNumber)).BeginInit();
             this.SuspendLayout();
@@ -160,12 +161,23 @@
             this.checkDivision.UseVisualStyleBackColor = true;
             this.checkDivision.CheckedChanged += new System.EventHandler(this.checkDivision_CheckedChanged);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(17, 195);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "GitHub test";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(196, 182);
+            this.ClientSize = new System.Drawing.Size(201, 230);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.checkDivision);
             this.Controls.Add(this.checkGange);
             this.Controls.Add(this.checkMinus);
@@ -200,6 +212,7 @@
         private System.Windows.Forms.CheckBox checkMinus;
         private System.Windows.Forms.CheckBox checkGange;
         private System.Windows.Forms.CheckBox checkDivision;
+        private System.Windows.Forms.Button button1;
     }
 }
 

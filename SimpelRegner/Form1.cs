@@ -68,5 +68,10 @@ namespace SimpelRegner
         {
             beregner.b = (int)secondNumber.Value;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Mega simpelt");
+        }
     }
 }
